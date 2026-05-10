@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('qr_code');
             $table->enum('jenis_wbp', ['tahanan', 'narapidana']);
             $table->date('tanggal_kunjungan');
+            $table->enum('jenis_identitas', ['nik', 'sim', 'passport', 'nisn', 'lainnya']);
             $table->string('nama_pengunjung');
             $table->string('nomor_identitas');
             $table->string('no_hp');
