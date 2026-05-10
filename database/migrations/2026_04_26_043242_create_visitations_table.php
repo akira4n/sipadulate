@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('visitations', function (Blueprint $table) {
             $table->id();
-            $table->string('qr_code');
+            $table->string('qr_code')->unique();
             $table->integer('nomor_antrian');
             $table->enum('jenis_wbp', ['tahanan', 'narapidana']);
             $table->date('tanggal_kunjungan');
