@@ -29,7 +29,7 @@ class StoreVisitationRequest extends FormRequest
             'jenis_wbp' => 'required|in:tahanan,narapidana',
             'tanggal_kunjungan' => 'required|date|after_or_equal:today',
             'nama_pengunjung' => 'required|string|max:255',
-            'jenis_identitas' => 'required|in:nik,sim,paspor,nisn,lainnya',
+            'jenis_identitas' => 'required|in:nik,sim,passport,nisn,lainnya',
             'nomor_identitas' => 'required|string|max:50',
             'no_hp' => 'required|string|max:20',
             'alamat' => 'required|string',
