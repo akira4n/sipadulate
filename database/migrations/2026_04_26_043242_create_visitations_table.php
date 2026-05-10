@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('visitations', function (Blueprint $table) {
             $table->id();
             $table->string('qr_code');
+            $table->integer('nomor_antrian');
             $table->enum('jenis_wbp', ['tahanan', 'narapidana']);
             $table->date('tanggal_kunjungan');
             $table->enum('jenis_identitas', ['nik', 'sim', 'passport', 'nisn', 'lainnya']);
