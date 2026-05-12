@@ -34,7 +34,7 @@ class StoreVisitationRequest extends FormRequest
             'no_hp' => 'required|string|max:20',
             'alamat' => 'required|string',
             'nama_wbp' => 'required|string|max:255',
-            'hubungan_wbp' => 'required|string|max:100',
+            'hubungan_wbp' => 'required|in:orang tua,anak,suami,istri,saudara,keponakan,teman,pengacara,lainnya',
             'jumlah_pengikut' => 'required|integer|min:0|max:5',
             'foto_pegang_identitas' => 'required|image|mimes:jpg,jpeg,png|max:2048',
             'foto_identitas' => 'required|image|mimes:jpg,jpeg,png|max:2048',
