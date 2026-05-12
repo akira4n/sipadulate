@@ -27,6 +27,7 @@ class Visitation extends Model
     protected $casts = [
         'tanggal_kunjungan' => 'date',
         'verified_at' => 'datetime',
+        'jumlah_pengikut' => 'array',
     ];
 
     public function verifier(): BelongsTo

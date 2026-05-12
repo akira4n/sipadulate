@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('nama_wbp');
             $table->string('hubungan_wbp');
-            $table->integer('jumlah_pengikut');
+            $table->json('jumlah_pengikut');
 
             // file path untuk foto
             $table->string('foto_pegang_identitas');
